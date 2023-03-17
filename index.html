@@ -1,193 +1,142 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Moshe Katzenelson</title>
+    </head>
 
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
+    <body>
+        <div id="menu">
+            <li><a href="#about">About Moshe</a></li>
+            <li>|</li>
+            <li><a href="#story">Story</a></li>
+            <li>|</li>
+            <li><a href="#family">Family</a></li>
+            <li>|</li>
+            <li><a href="#photos">Photos</a></li>
+            <li>|</li>
+            <li><a href="#like">Like This Page</a></li>
+            <li>|</li>
+            <li><a href="#qr">QR Code</a></li>
+            <li>|</li>
+            <li><a href="#more">Learn More</a></li>
+        </div>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
+        <p>
+            <br />
+            <br />
+            <br />
+            <br />
+            This website is dedicated to the life of Moshe Katzenelson, a former Palmach warrior
+            who fought in Israel Independance war.
+        </p>
 
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
+        <section id="about" class="section">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <b>About Moshe</b>
+            <p>
+                Moshe was born...
+            </p>
+            <br />
+            <br />
+            <br />
+        </section>
 
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
+        <section id="story" class="section">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <b>Story</b>
+            <p>
+                Moshe served...
+            </p>
+            <br />
+            <br />
+            <br />
+        </section>
 
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
+        <section id="family" class="section">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <b>Family</b>
+            <p>
+                In xxxx, Moshe married...
+            </p>
+            <br />
+            <br />
+            <br />
+        </section>
 
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+        <section id="photos" class="section">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <b>Photos</b>
+            <br />
+            <br />
+            <br />
+        </section>
+
+        <section id="like" class="section">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <b>Like This Page</b>
+            <br />
+            <br />
+            <br />
+        </section>
+
+        <section id="qr" class="section">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <b>QR Code</b>
+            <br />
+            <br />
+            <br />
+        </section>
+
+        <section id="more" class="section">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <b>Learn More</b>
+            <br />
+            <br />
+            <br />
+        </section>
 
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
-</body>
+        <script type="text/javascript">
+            $(function () {
+                $("#nav a").click(function (e) {
+                    e.preventDefault();
+                    $('html,body').scrollTo(this.hash, this.hash);
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).scroll(function () {
+                $('#menu').toggle($(this).scrollTop() > 1000)
+            });
+        </script>
+    </body>
 </html>
