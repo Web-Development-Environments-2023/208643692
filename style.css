@@ -4,6 +4,7 @@
 	width: 100%;
 	height: 35px;
 	font-size: 20px;
+	color: black;
 }
 
 li {
@@ -11,11 +12,12 @@ li {
 }
 
 body {
-	background-image: url(https://www.bremerhaven.de/sixcms/media.php/bhv2016.a.93.de/thumbnail/AlterHafen1928.337990.jpg);
+	background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://www.bremerhaven.de/sixcms/media.php/bhv2016.a.93.de/thumbnail/AlterHafen1928.337990.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	font-family: Arial;
+	color: azure;
 }
 
 p {
