@@ -118,9 +118,6 @@
         <section id="photos" class="section">
             <br />
             <br />
-            <br />
-            <br />
-            <br />
             <b>Photos</b>
             <br />
             <br />
@@ -152,9 +149,6 @@
         <section id="like" class="section">
             <br />
             <br />
-            <br />
-            <br />
-            <br />
             <b>Like The Palmach Organiztion</b>
             <br />
             <br />
@@ -165,7 +159,6 @@
         </section>
 
         <section id="qr" class="section">
-            <br />
             <br />
             <br />
             <b>QR Code</b>
@@ -200,54 +193,20 @@
         <section id="contact" class="section">
             <br />
             <br />
-            <br />
-            <br />
-            <br />
             <b>Contact Us</b>
             <br />
             <br />
-            <div class="card">
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group">
-                            <label>First Name</label>
-                            <input type="text">
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="form-group">
-                            <label>Surname</label>
-                            <input type="text">
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="text">
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="form-group">
-                            <label>Phone</label>
-                            <input type="text">
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="form-group">
-                            <label>Message</label>
-                            <textarea></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <input type="submit" value="Submit">
-                    </div>
+            <form action="mailto:gad0711@walla.com" method="post" enctype="text/plain">
+                Name:<br><input type="text" name="name" placeholder="Enter Name"> <br>
+                Message:<br><textarea id="mytextarea" placeholder="Enter Message"></textarea><br />
+                Add Emoji: <select onclick="toggleEmojiDrawer()">Emojis</select>
+                <div id="drawer" class="emoji-drawer hidden">
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">&#128512;</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">&#128513;</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">&#128151;</div>
                 </div>
-            </div>
+                <input type="submit" value="Send">
+            </form>
             <br />
             <br />
         </section>
@@ -265,6 +224,23 @@
             $(document).scroll(function () {
                 $('#menu').toggle($(this).scrollTop() > 1000)
             });
+        </script>
+        <script type="text/javascript">
+            function addEmoji(emoji) {
+                let inputEle = document.getElementById('mytextarea');
+
+                inputEle.value += emoji;
+            }
+
+            function toggleEmojiDrawer() {
+                let drawer = document.getElementById('drawer');
+
+                if (drawer.classList.contains('hidden')) {
+                    drawer.classList.remove('hidden');
+                } else {
+                    drawer.classList.add('hidden');
+                }
+            }
         </script>
     </body>
 </html>
